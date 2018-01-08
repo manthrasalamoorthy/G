@@ -4,7 +4,7 @@ void main()
 int base,pow,res=1;
 printf("enter the base value:");
 scanf("%d",&base);
-printf("enter the pow value:"):
+printf("enter the pow value:");
 scanf("%d",&pow);
 while(pow!=0)
 {
