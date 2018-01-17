@@ -13,7 +13,7 @@ rem=num%10;
 res=res+rem*rem*rem;
 num=num/10;
 }
-if(c==num)
+if(c==res)
 {
 printf("%d",c);
 }
