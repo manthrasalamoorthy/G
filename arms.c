@@ -9,7 +9,7 @@ while(num!=0)
 {
 rem=num%10;
 res=res+rem*rem*rem;
-nunum/10;
+num=num/10;
 }
 if(res==c)
 {
