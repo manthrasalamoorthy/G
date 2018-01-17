@@ -10,7 +10,7 @@ for(i=low+1;i<high;++i)
   num=0;
 while(tmp!=0)
 {
-rem=num%10;
+rem=tmp%10;
 num=num+rem*rem*rem;
 tmp=tmp/10;
 }
