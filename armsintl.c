@@ -1,20 +1,21 @@
 #include<stdio.h>
 void main()
 {
-int num,res=0,rem,low,high,c;
+int num,rem,low,high,tmp,i;
 printf("enter the low and high value:");
 scanf("%d%d",&low,&high);
-c=num;
-for(num=low;num<=high;num++)
+for(i=low+1;i<high;++i)
 {
-while(num!=0)
+  tmp=i;
+  num=0;
+while(tmp!=0)
 {
 rem=num%10;
-res=res+rem*rem*rem;
-num=num/10;
+num=num+rem*rem*rem;
+tmp=tmp/10;
 }
-if(c==res)
+if(i==num)
 {
-printf("%d",c);
+printf("%d",i);
 }
 }}
