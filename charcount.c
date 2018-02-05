@@ -1,17 +1,32 @@
-#include<stdio.h>
+#include <stdio.h>
 #include<string.h>
+ 
 int main()
 {
-char str[100];
-int cnt=0,i;
-printf("Enter the string:");
-scanf("%s",&str);
-for(i=0;str[i]!='\0';++i)
-{
-    if((str[i]>='a'&& str[i]<='z')||(str[i]>='A'&& str[i]<='Z'))
+    char    str[100];
+    int countDigits,countAlphabet,countSpecialChar,countSpaces;
+    int counter;
+ 
+
+    countDigits=countAlphabet=countSpecialChar=countSpaces=0;
+ 
+    printf("Enter a string: ");
+    gets(str);
+ 
+    for(counter=0;str[counter]!=NULL;counter++)
     {
-        ++cnt;
-    }}
-printf("%d",cnt);
-return 0;
+ 
+        if(str[counter]>='0' && str[counter]<='9')
+            countDigits++;
+        else if((str[counter]>='A' && str[counter]<='Z')||(str[counter]>='a' && str[counter]<='z'))
+            countAlphabet++;
+        else if(str[counter]==' ')
+            countSpaces++;
+        else
+            countSpecialChar++;
+    }
+ 
+    printf(" \nAlphabets: %d ",countAlphabet);
+ 
+    return 0;
 }
