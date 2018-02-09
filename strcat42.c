@@ -1,21 +1,21 @@
 #include<stdio.h>
-
-void main(void)
+#include<string.h>
+int main()
 {
   char str1[25],str2[25];
-  int i=0,j=0;
+  int j=0,k=0;
   printf("\nEnter First String:");
-  gets(str1);
+  scanf("%s",str1);
   printf("\nEnter Second String:");
-  gets(str2);
-  while(str1[i]!='\0')
-  i++;
-  while(str2[j]!='\0')
+  scanf("%s",str2);
+  while(str1[j]!='\0')
+  j++;
+  while(str2[k]!='\0')
   {
-    str1[i]=str2[j];
+    str1[j]=str2[k];
+    k++;
     j++;
-    i++;
   }
-  str1[i]='\0';
+  str1[j]='\0';
   printf("\nConcatenated String is %s",str1);
 }
