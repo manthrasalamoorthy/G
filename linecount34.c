@@ -1,14 +1,15 @@
 #include<stdio.h>
-void main()
+#include<string.h>
+int main()
 {
-char b[100];
-int cnt=0,i;
+char str[100];
+int count=0,j;
 printf("Enter the paragraph\n");
-scanf("%[^\n]s",b);
-for(i=0;b[i]!='\0';i++)
+scanf("%[^\n]s",str);
+for(j=0;str[j]!='\0';j++)
 {
-if(b[i]=='.')
-cnt++;
+if(str[j]=='.')
+count++;
 }
-printf("Number of lines in paragraph are:%d\n",cnt);
+printf("Number of lines in paragraph are:%d\n",count);
 }
