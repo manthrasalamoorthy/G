@@ -3,18 +3,25 @@
 int main()
 {
 char s[10];
-int i,l,f;
+int i,l,flag=0;
 printf("Enter the string:");
-scanf("%s",s);
-for(i=0;s[i]!='\0';i++)
+scanf("%s",&s);
+l=strlen(s);
+for(i=0;i<=l;i++)
 {
 if(s[i]==s[i+1])
-f=1;
+{
+flag=1;
+}
 break;
 }
-if(f==1)
+if(flag==1)
+{
 printf("NO");
+}
 else
-printf("TES");
+{
+  printf("YES");
+}
 return 0;
 }
