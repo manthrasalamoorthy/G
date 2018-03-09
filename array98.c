@@ -11,7 +11,7 @@
 	{
 		if(i!=a[i])
 		{
-			printf("\n%d",i);
+			printf("\n%d",a[i]);
 			break;
 		}
 	}
